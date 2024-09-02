@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 10px 0px black;
+    padding: 0.5rem;
+    .menu{
+        display: flex;
+    }
+}
+
+.navbar img {
+    width: 70px;
+    height: 70px;
+}
+.navbar .user img {
+    width: 70px;
+    height: 40px;
+} 
+.navbar .menu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    li{
+        padding: 15px;
+        border-radius: 16px;
+        margin-right: 10px;
+    }
+    li:hover{
+        background-color: rgb(223, 221, 220);
+    }
+}
+
+.navbar .hamburger {
+    cursor: pointer;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+
+.navbar .hamburger input {
+    display: none;
+}
+
+.navbar .hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .line {
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.navbar .hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.navbar .hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+
+@media (max-width:500px) {
+    .navbar .user {
+        display: none;
+    }
+    .navbar .hamburger{
+        display: block;
+    }
+    .navbar .menu{
+        display: none;
+    }
+}

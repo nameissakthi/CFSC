@@ -1,0 +1,96 @@
+.gov-footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.gov-footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gov-footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.gov-footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gov-footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.gov-footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.gov-footer-links ul li a:hover {
+    color: #ffcc00;
+}
+
+.gov-footer-contact p,
+.gov-footer-contact a {
+    margin: 0;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.gov-footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.gov-footer-social h4 {
+    margin-bottom: 10px;
+}
+
+.gov-footer-social-icons a {
+    margin-right: 15px;
+}
+
+.gov-footer-social-icons{
+    margin-top: 15px;
+}
+
+.gov-footer-social-icons a>*{
+    color: white;
+    width: 25px;
+    height: 25px;
+}
+.gov-footer-social-icons a>*:hover{
+    scale: 1.2;
+}
+
+
+.gov-footer-social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.gov-footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+@media (max-width:800px){
+    .gov-footer-logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .gov-footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

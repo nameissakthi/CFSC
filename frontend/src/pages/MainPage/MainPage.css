@@ -1,0 +1,51 @@
+/* MainPage.css */
+
+.MainPage-menu {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+  }
+  
+  .MainPage-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .MainPage-menu-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .MainPage-menu-item p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .MainPage-menu-item:hover {
+    background-color: #e0e0e0;
+  }
+  .MainPage-menu-item a{
+    text-decoration: none;
+    color: black;
+  }
+  @media (max-width:800px){
+    .MainPage-menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+  }
